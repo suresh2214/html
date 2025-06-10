@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <style>
+            form{
+                background-color: rgb(255, 255, 255);
+            }
+            body{
+                background-image:url(data:image/jpeg;base64,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);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .blue{
+                color: rgb(207, 14, 14);
+            }
+            .red{
+                color:black;
+            }
+            .color{
+                color: rgba(241, 166, 15, 0.826);
+            }
+        </style>
+    </head>
+    <body >
+        
+            <fieldset align = "center">
+            <legend><big><b><span style ="color: red;font-size: 50px;"> FF Hotel</span></big></b></legend><br>
+            <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm9-ObM0wp4Oaiw4gHB540LeHzlfCZQNhNjQ&s " width="200" height="200"><br><br>
+            <label><big><b><i><i><span style ="color:orangered;font-size: 60px;">Menu</span></big></b></i></i></label>
+            </fieldset>
+            <fieldset>
+             <table cellpadding="40%" cellspacing="50px">
+                <tr>
+                    <th colspan="2"><h2><u>NON VEG ITEMS  </u></h2></th>
+                    <th><h2><u>PRICES</u></h2></th>
+                    <th colspan="2"><h2><u>VEG ITEMS</u></h2></th>
+                    <th><h2><u>PRICES</u></h2></th>
+                </tr>
+                <td><h3>1.Chicken dum biryani</h3></td>
+                <td><img src="https://bing.com/th?id=OSK.2a20f4f6dcd9d453b879d295189aed8f" width ="120px" height="120px"></td>
+                <td><h3>300/-</h3></td>
+                <td><h3>1.paneer biryani</h3></td>
+                <td><img src="https://bing.com/th?id=OSK.10915288b38f5ccf08f3067dee047f4c" width ="120px" height="120px"></td>
+                <td><h3>200/-</h3></td></tr>
+                <tr>
+                <td><h3>2.Mutton biryani</h3></td>
+                <td><img src="https://bing.com/th?id=OSK.bcd3328c0d0fa8f7338921905a19a3fb" width ="120px" height="120px"></td>
+                <td><h3>300/-</h3></td>
+                <td><h3>2.VEG biryani</h3></td>
+                <td><img src="https://bing.com/th?id=OSK.10915288b38f5ccf08f3067dee047f4c" width ="120px" height="120px"></td>
+                <td><h3>200/-</h3></td></tr>
+
+            </fieldset>
+        </table>
+        <footer align="center">
+            <h1> Thank you for Visit</h1>
+        </footer>
+        <address style="background-color: darkgrey;"align="center">Nandamuru &nbsp;,&nbsp; Pincode-521132 &nbsp;,&nbsp;contact us-9373877377<br>Email-FFhotels333@gmail.com</address>
+    </body>
+</html>
