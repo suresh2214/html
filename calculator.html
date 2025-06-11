@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Calculator</title>
+  <style>
+    h2
+    {
+        color: rgb(51, 182, 25);
+    }
+  </style>
+</head>
+<body>
+    <center>
+  <h2>Simple Calculator</h2>
+  <input type = "number" id="h">
+  <input type = "number" id="g">
+  <button onclick="add()">add</button>
+  <button onclick="sub()">sub</button>
+  <button onclick="mul()">mul</button>
+  <button onclick="div()">div</button>
+  <h2 id="display"></h2>
+    </center>
+</body>
+<script>
+    function add(){
+        let a=Number(document.getElementById("h").value);
+        let b=Number(document.getElementById("g").value);
+        document.getElementById("display").innerHTML=a+b;
+    }
+    function sub{
+        let a=Number(document.getElementById("h").value);
+        let b=Number(document.getElementById("g").value);
+        document.getElementById("display").innerHTML=a-b;
+    }
+    function mul{
+        let a=Number(document.getElementById("h").value);
+        let b=Number(document.getElementById("g").value);
+        document.getElementById("display").innerHTML=a*b;
+    }
+    function div {
+        let a=Number(document.getElementById("h").value);
+        let b=Number(document.getElementById("g").value);
+        document.getElementById("display").innerHTML=a/b;
+    }
+</script>
+    
