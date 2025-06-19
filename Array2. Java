@@ -1,0 +1,21 @@
+public class AverageCalculator {
+
+    public static double calculateAverage(int[] numbers) {
+        if (numbers.length == 0) {
+            return 0; // Avoid division by zero
+        }
+
+        int sum = 0;
+        for (int num : numbers) {
+            sum += num;
+        }
+
+        return (double) sum / numbers.length;
+    }
+
+    public static void main(String[] args) {
+        int[] array = {10, 20, 30, 40, 50};
+        double average = calculateAverage(array);
+        System.out.println("Average value: " + average);
+    }
+}
